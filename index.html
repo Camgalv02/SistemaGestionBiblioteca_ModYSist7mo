@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Biblioteca</h1>
+
+        <div class="form-container">
+            <h2>Registrar Libro</h2>
+            <form id="registerBookForm">
+                <input type="text" id="bookTitle" placeholder="Título del Libro" required>
+                <input type="text" id="bookAuthor" placeholder="Autor del Libro" required>
+                <input type="text" id="bookISBN" placeholder="ISBN" required>
+                <button type="submit">Registrar Libro</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Registrar Usuario</h2>
+            <form id="registerUserForm">
+                <input type="text" id="userName" placeholder="Nombre del Usuario" required>
+                <input type="text" id="userAddress" placeholder="Dirección" required>
+                <input type="text" id="userPhone" placeholder="Teléfono" required>
+                <button type="submit">Registrar Usuario</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Buscar Libro</h2>
+            <form id="searchBookForm">
+                <input type="text" id="searchTitle" placeholder="Título del Libro">
+                <input type="text" id="searchAuthor" placeholder="Autor del Libro">
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="searchResults"></div>
+        </div>
+        
+        <div class="form-container">
+            <h2>Prestar Libro</h2>
+            <form id="lendBookForm">
+                <input type="number" id="lendUserId" placeholder="ID del Usuario" required>
+                <input type="number" id="lendBookId" placeholder="ID del Libro" required>
+                <button type="submit">Prestar Libro</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Devolver Libro</h2>
+            <form id="returnBookForm">
+                <input type="number" id="returnBookId" placeholder="ID del Libro" required>
+                <button type="submit">Devolver Libro</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
